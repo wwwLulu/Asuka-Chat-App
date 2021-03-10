@@ -20,16 +20,20 @@
         overflow: scroll;
         border-bottom: solid 1px rgba(0, 0, 0, 0.5);
     }
+    &__room {
+        font-size: 2rem;
+    }
     &__users {
         max-height: 80%;
         overflow: auto;
+        font-size: 1.4rem;
+
         hr {
             color: white;
             opacity: 1;
         }
         p {
             width: 100%;
-            font-size: 1.2rem;
             margin: 1rem 0;
         }
     }
