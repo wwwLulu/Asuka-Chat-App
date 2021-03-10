@@ -1,0 +1,61 @@
+.form {
+    --padding: 3rem;
+    border-radius: 1rem;
+    width: 35rem;
+    padding: var(--padding);
+    height: 26rem;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 2550, 0.7)
+    );
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form {
+        width: 100%;
+    }
+    input,
+    button {
+        border-radius: 0.5rem;
+        display: block;
+        margin: 2rem 0;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        height: 3.5rem;
+        border: 0.2rem solid var(--color-primary);
+    }
+
+    input {
+        font-size: 1.4rem;
+    }
+
+    button {
+        cursor: pointer;
+        color: white;
+        font-size: 1.8rem;
+        border: none;
+    }
+
+    &__avatar-container {
+        position: relative;
+        min-width: 13.5rem;
+        min-height: 13.5rem;
+        margin-top: (-6.75rem - 3rem);
+        background: white;
+        border-radius: 50%;
+        border: 0.5rem solid white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+        img {
+            position: absolute;
+            border-radius: inherit;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

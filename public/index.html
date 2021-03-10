@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./style.css" />
+        <title>Asuka - Home</title>
+    </head>
+    <body>
+        <div class="background primary-gradient"></div>
+        <div class="screen-container">
+            <div class="card form">
+                <div class="form__avatar-container">
+                    <img
+                        src="./images/mascot.jpg"
+                        alt="mascot"
+                        class="form__avatar"
+                    />
+                </div>
+                <form action="/chat.html">
+                    <input
+                        class="form__display-name"
+                        type="text"
+                        placeholder="Display Name"
+                        name="username"
+                        required
+                    />
+                    <input
+                        class="form__room"
+                        type="text"
+                        name="room"
+                        placeholder="Room Name"
+                        required
+                    />
+                    <button type="submit" class="form__join primary-gradient">
+                        Join
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
